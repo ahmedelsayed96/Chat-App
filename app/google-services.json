@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "489273320663",
+    "firebase_url": "https://hatemido123.firebaseio.com",
+    "project_id": "firebase-hatemido123",
+    "storage_bucket": "firebase-hatemido123.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:489273320663:android:a86c1d411b4dd48f",
+        "android_client_info": {
+          "package_name": "ahmed.example.com.chatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "489273320663-v06eua3ag9vd2t5ad4uhfvr1qunc9t3b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhQZpxG8_g4AwUzCyyQ7ih6DJ1lXM4Y-Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

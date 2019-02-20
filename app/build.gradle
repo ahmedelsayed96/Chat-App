@@ -1,0 +1,56 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'Ahmed'
+            keyPassword '123123'
+            storeFile file("$rootDir/keystore.jks")
+            storePassword '123123'
+        }
+    }
+    compileSdkVersion 26
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        applicationId "ahmed.example.com.chatapp"
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            signingConfig signingConfigs.config
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+//    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+//        exclude group: 'com.android.support', module: 'support-annotations'
+//    })
+    implementation 'com.android.support:appcompat-v7:26.+'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support:design:26.+'
+    implementation 'com.squareup.picasso:picasso:2.4.0'
+    implementation 'com.jakewharton:butterknife:8.7.0'
+    implementation 'com.google.firebase:firebase-core:11.4.2'
+    implementation 'com.google.firebase:firebase-database:11.4.2'
+    implementation 'com.google.firebase:firebase-storage:11.4.2'
+    implementation 'com.google.firebase:firebase-auth:11.4.2'
+    implementation 'com.android.support:support-v4:26.+'
+    implementation 'com.github.bumptech.glide:glide:4.2.0'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.firebase:firebase-jobdispatcher:0.8.2'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.7.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.2.0'
+}
+apply plugin: 'com.google.gms.google-services'
+

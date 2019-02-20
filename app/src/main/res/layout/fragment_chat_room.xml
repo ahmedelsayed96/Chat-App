@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="ahmed.example.com.chatapp.ui.chat.ChatRoomFragment"
+    >
+
+
+    <android.support.v7.widget.RecyclerView
+
+        android:id="@+id/message_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/back"
+        android:layout_weight="1">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/send_image"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:contentDescription="@string/send_image_message"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/ic_photo"
+            />
+
+        <EditText
+            android:id="@+id/message_edit_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+
+        <ImageButton
+            android:id="@+id/send_text"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:contentDescription="@string/send_text_message"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/ic_send"/>
+
+    </LinearLayout>
+
+</LinearLayout>
